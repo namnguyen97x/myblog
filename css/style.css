@@ -12,7 +12,6 @@ body {
 }
 .sidebar {
     width: 300px;
-    border: 1px solid rgba(0, 0, 0, 0.3);
     height: 700px;
     border-radius: 10px;
     display: flex;
@@ -165,4 +164,38 @@ li {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+.footer {
+    display: flex;
+    background-color:#00a8f4;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+}
+.footer img {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+.footer p {
+    padding: 10px;
+    font-size: 30px;
+    color: white;
+}
+.flying {
+    position: absolute;
+    top: 20px; 
+    right: -150px; 
+    width: 50px; 
+    height: auto;
+    animation: flyRightToLeft 10s linear infinite;
+}
+
+@keyframes flyRightToLeft {
+    from {
+        transform: translateX(100vw); /* Start from the right */
+    }
+    to {
+        transform: translateX(-110vw); /* Move further to the left */
+    }
 }
