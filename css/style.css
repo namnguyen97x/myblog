@@ -161,9 +161,7 @@ h4 {
     font-weight: bold;
 }
 li {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    text-wrap: wrap;
 }
 .footer {
     display: flex;
@@ -210,9 +208,9 @@ li {
 }
 @media (max-width: 768px) {
     .container {
-        padding: 20px;
+        padding: 0;
     }
-    .sidebar {
+    .sidebar, .content {
         width: 100%;
         height: auto;
     }
