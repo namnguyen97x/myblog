@@ -1,0 +1,168 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(75, 206, 236);
+}
+.container {
+    padding: 100px;
+    gap: 20px;
+}
+.sidebar {
+    width: 300px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    height: 700px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+.avatar1 {
+    width: 60%;
+    height: auto;
+    object-fit: cover;
+    margin: 50px 0;
+    border-radius: 20px;
+    transition: cubic-bezier(0.6, 0.04, 0.98, 0.335) 0.3s;
+}
+h2 {
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 10px;
+    transition: background-color 0.5s ease, color 0.5s ease, border-radius 0.5s ease, transform 0.5s ease;
+}
+h2:hover {
+    background-color: #ff6463;
+    color: #ffffff;
+    border-radius: 20px;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.avatar1:hover {
+    transform: scale(1.1);
+    background-color: #ff6463;
+    color: #ffffff;
+    border-radius: 20px;
+}
+.content {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    height: auto;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #ffffff;
+    transform: translateX(100%);
+    animation: slideIn 1s forwards;
+}
+@keyframes slideIn {
+    to {
+        transform: translateX(0);
+    }
+}
+.info {
+    align-self: start;
+    padding: 10px 30px;
+}
+.option {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+    transition: transform 0.3s;
+    padding: 5px;
+}
+.option:hover {
+    transform: scale(1.2);
+    background-color: #ff6463;
+    color: #ffffff;
+    border-radius: 5px;
+}
+.pinwheel {
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+}
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.header {
+    margin: 30px 0;
+    background-color: #ff6463;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 50px;
+    border-radius: 30px 0 30px 0;
+    text-align: center;
+}
+h1 {
+    color: white;
+}
+.header h2 {
+    background-color: white;
+    color: #ff6463;
+    border-radius: 30px;
+    margin-left: 50px;
+    font-size: 22px;
+    padding: 10px;
+}
+.avatar2 {
+    padding: 5px;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    position: relative;
+    margin-top: -50px;
+    background-color: #ffffff; 
+    transform: translateY(100px);
+    animation: slideUp 1s forwards; 
+}
+@keyframes slideUp {
+    to {
+        transform: translateY(0); 
+    }
+}
+.school-link {
+    text-decoration: none;
+    color: #ff6463;
+}
+.about {
+    padding: 10px;
+    border-radius: 20px;
+    transition: background-color 2s ease, color 1s ease;
+}
+h4 {
+    padding: 8px;
+    background-color: #dc0000;
+    color: white;
+    margin: 10px 0;
+    max-width: 170px;
+    border-radius: 10px;
+}
+.myname {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.myname p {
+    font-size: 22px;
+    font-weight: bold;
+}
+li {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
