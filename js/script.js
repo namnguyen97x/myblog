@@ -21,3 +21,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   typeWriter();
 });
+let dorayaki = document.getElementById("dorayaki");
+
+dorayaki.addEventListener("click", function () {
+  window.location.href = "https://vi.wikipedia.org/wiki/Dorayaki";
+});
