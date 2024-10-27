@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (index < text.length) {
       textElement.innerHTML += text.charAt(index);
       index++;
-      setTimeout(typeWriter, 20);
+      setTimeout(typeWriter, 5);
     } else {
       contentSections.style.display = "block";
       about.style.animation = "fadeIn 3s"; // Apply fade-in animation to about section
